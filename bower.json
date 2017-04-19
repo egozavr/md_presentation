@@ -1,0 +1,14 @@
+{
+  "name": "md_presentation",
+  "description": "MarkDown Presentation",
+  "version": "0.0.0",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.5.0",
+    "angular-loader": "~1.5.0",
+    "angular-mocks": "~1.5.0",
+    "angular-ui-router": "1.0.0-rc.1",
+    "angular-material": "^1.1.3"
+  }
+}
