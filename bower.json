@@ -5,10 +5,12 @@
   "homepage": "",
   "private": true,
   "dependencies": {
-    "angular": "~1.5.0",
-    "angular-loader": "~1.5.0",
-    "angular-mocks": "~1.5.0",
+    "angular": "~1.6.0",
+    "angular-loader": "~1.6.0",
+    "angular-mocks": "~1.6.0",
     "angular-ui-router": "1.0.0-rc.1",
-    "angular-material": "^1.1.3"
+    "angular-material": "^1.1.3",
+    "showdown": "^1.6.4",
+    "ng-showdown": "^1.1.0"
   }
 }
