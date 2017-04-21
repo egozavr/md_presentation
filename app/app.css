@@ -1,25 +1,28 @@
-/* app css stylesheet */
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+.presentation {
+    zoom: 1.0;
+    font-family: BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-.menu:before {
-  content: "[";
+.presentation table {
+    border-collapse: collapse;
+    /*padding: 5%;*/
 }
 
-.menu:after {
-  content: "]";
+.presentation td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
 }
 
-.menu > li {
-  display: inline;
+.presentation :not(pre) > code {
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(27, 31, 35, 0.15);
+    border-radius: 3px;
 }
 
-.menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
