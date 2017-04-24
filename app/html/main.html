@@ -1,0 +1,13 @@
+<div layout="row">
+    <a ui-sref="slide({slideUrl: '/presentation/test_1.md'})">S1</a>;
+    <a ui-sref="slide({slideUrl: '/presentation/test_2.md'})">S2</a>;
+    <a ui-sref="main">Main</a>
+</div>
+<div layout="row">
+    <div flex="90" class="md-padding">
+        <ui-view name="presentation"></ui-view>
+    </div>
+    <div flex="10">
+        <control-panel></control-panel>
+    </div>
+</div>
