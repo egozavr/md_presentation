@@ -1,4 +1,26 @@
-<div layout="column" class="control-buttons">
-    <md-button class="md-fab md-primary md-ink-ripple" ng-click="$ctrl.goPrev()">Prev.</md-button>
-    <md-button class="md-fab md-primary md-ink-ripple" ng-click="$ctrl.goNext()">Next</md-button>
+<div layout="column" layout-align="center center" class="control-panel">
+    <div class="control-menu" layout="column" layout-align="center-center">
+        <md-button class="md-fab md-primary md-mini md-ink-ripple"
+                   ng-disabled="$ctrl.disableZoomIn" ng-click="$ctrl.onZoomIn()">+</md-button>
+        <md-button class="md-fab md-primary md-mini md-ink-ripple"
+                   ng-disabled="$ctrl.disableZoomOut" ng-click="$ctrl.onZoomOut()">-</md-button>
+        <md-button class="md-fab md-primary md-mini md-ink-ripple"
+                   ng-disabled="$ctrl.disableZoomReset" ng-click="$ctrl.onZoomReset()">
+            <small>x{{$ctrl.zoom}}</small>
+        </md-button>
+    </div>
+
+    <div class="control-buttons" layout="column" layout-align="center-center">
+        <md-button class="md-fab md-primary md-ink-ripple"
+                   ng-disabled="$ctrl.opts.first" ng-click="$ctrl.goPrev()">
+            Prev.
+        </md-button>
+        <md-button class="md-fab md-primary md-ink-ripple"
+                   ng-disabled="$ctrl.opts.last" ng-click="$ctrl.goNext()">
+            Next
+        </md-button>
+        <div class="page-count md-padding" md-colors="{background: 'primary-500-0.5'}">
+            {{$ctrl.opts.current}}/{{$ctrl.opts.total}}
+        </div>
+    </div>
 </div>

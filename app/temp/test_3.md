@@ -1,5 +1,11 @@
 # Test slide 2
 
+###Test table rendering
+\# | name | description
+---:| :--- | :---
+1  | rb061019 | Curent RB account
+2  | rbx001365 | Old outstuffer account
+
 ###Code block
 ```javascript
 function sayHi(name) {
@@ -24,3 +30,15 @@ console.log(foo);
 console.log(foo);
 
 ```
+
+---
+
+## Getting Started
+
+To get you started you can simply clone the `angular-seed` repository and install the dependencies:
+
+### Prerequisites
+
+You need git to clone the `angular-seed` repository. You can get git from [here][git].
+
+[git]: https://git-scm.com/

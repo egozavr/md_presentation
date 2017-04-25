@@ -1,5 +1,4 @@
 .presentation {
-    zoom: 1.0;
     font-family: BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -26,10 +25,26 @@
     border-radius: 3px;
 }
 
-.control-buttons {
-    top: auto;
-    right: 20px;
-    bottom: 20px;
+.control-panel {
+    right: 40px;
     left: auto;
     position: fixed !important;
+}
+
+.control-menu {
+    top: 20px;
+    bottom: auto;
+    position: fixed !important;
+
+}
+
+.control-buttons {
+    top: auto;
+    bottom: 20px;
+    position: fixed !important;
+}
+
+.page-count {
+    margin-top: 10px;
+    border-radius: 5px;
 }
