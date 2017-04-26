@@ -1,5 +1,7 @@
 # Test slide 2
 
+---
+
 ###Code block
 ```javascript
 function sayHi(name) {
