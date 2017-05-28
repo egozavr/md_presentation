@@ -189,6 +189,7 @@ function MainController(viewOpts, $state) {
     this.$onInit = function () {
 
         this.zoom = 1.0;
+        this.zoomStyle = {zoom: this.zoom};
 
         if (this.slideUrls.length > 0) {
             viewOpts.setSlideUrls(this.slideUrls);
@@ -201,6 +202,7 @@ function MainController(viewOpts, $state) {
 
     this.zoomIn = function () {
         this.zoom = Math.min((Math.floor(this.zoom * 100) + 10) / 100, 2.0);
+        this.zoomStyle = {zoom: this.zoom};
     };
 
     this.dsblZoomIn = function () {
@@ -209,6 +211,7 @@ function MainController(viewOpts, $state) {
 
     this.zoomOut = function () {
         this.zoom = Math.max((Math.floor(this.zoom * 100) - 10) / 100, .8);
+        this.zoomStyle = {zoom: this.zoom};
     };
 
     this.dsblZoomOut = function () {
@@ -217,6 +220,7 @@ function MainController(viewOpts, $state) {
 
     this.zoomReset = function () {
         this.zoom = 1.0;
+        this.zoomStyle = {zoom: this.zoom};
     };
 
     this.dsblZoomReset = function () {
