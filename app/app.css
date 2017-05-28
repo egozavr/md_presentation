@@ -53,3 +53,10 @@
 .help-button {
     margin-bottom: 50px;
 }
+
+blockquote {
+    background: #f3f3f3;
+    border-left: 10px solid #ccc;
+    margin-left: 15px;
+    padding: 5px 10px;
+}
