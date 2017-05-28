@@ -269,8 +269,10 @@
         };
     }
 
-    PresentationController.$inject = ['$showdown'];
-    function PresentationController($showdown) {
+    PresentationController.$inject = ['$showdown', '$window'];
+    function PresentationController($showdown, $window) {
+
+        $window.scrollTo(0, 0);
 
         let self = this;
 
