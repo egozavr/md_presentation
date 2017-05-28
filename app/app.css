@@ -60,3 +60,7 @@ blockquote {
     margin-left: 15px;
     padding: 5px 10px;
 }
+
+pre > code {
+    border-radius: 5px;
+}
