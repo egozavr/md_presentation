@@ -29,30 +29,3 @@ Key | Action
 NumPad + | Zoom In
 NumPad - | Zoom Out
 NumPad / | Zoom Reset
-
-### Подсветка кода
-Подсветка кода осуществляется с помощью библиотеки [highlight.js](https://highlightjs.org/).
-В приложение включена custom-сборка `highlight.js` с ограниченным набором языков для подсветки:
-- CSS
-- JavaScript
-- Bash
-- JSON
-- Markdown
-- HTML, XML
-- Java
-- Python
-
-Для подсветки блока кода можно явно указать язык кода, например:
-```markdown
-    ```javascript
-    var foo = bar;
-    ```
-```
-Если язык не указан, `highlight.js` попытается определить его автоматически.
-
-Для отключения подветки вместо языка необходимо указать `nohighlight`:
-```nohighlight
-    ```nohighlight
-    Something pale...
-    ```
-```

@@ -5,12 +5,13 @@
     </div>
 </div>
 
-<div layout="row" layout-align="center" class="presentation" style={{'zoom:'+$ctrl.zoom}}>
-    <div flex="15"></div>
+<div layout="row" layout-align="center" class="presentation" ng-style="{'zoom':''+$ctrl.zoom}">
+    <!--style={{'zoom:'+$ctrl.zoom}}-->
+    <div flex="10"></div>
     <div flex class="md-padding">
         <ui-view name="presentation"></ui-view>
     </div>
-    <div flex="15"></div>
+    <div flex="10"></div>
 </div>
 <control-panel on-zoom-in="$ctrl.zoomIn()"
                on-zoom-out="$ctrl.zoomOut()"

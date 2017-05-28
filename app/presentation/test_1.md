@@ -1,10 +1,13 @@
 # Test slide 1
 
+---
+
 ###Test table rendering
-\# | name | description
+\# | tag | description
 ---:| :--- | :---
-1  | rb061019 | Curent RB account
-2  | rbx001365 | Old outstuffer account
+1  | &lt;html>  | Defines an HTML document
+2  | &lt;title> | Defines a title for the document
+3  | &lt;body>  | Defines the document's body
 
 
 
