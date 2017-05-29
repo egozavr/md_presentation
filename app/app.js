@@ -258,9 +258,9 @@
                 const keyCode = event.keyCode;
                 if (keyCode === 39 || keyCode === 32) self.goNext(); // <SPACE> and <rightArrow>
                 if (keyCode === 37 || keyCode === 8) self.goPrev();  // <BACKSPACE> and <leftArrow>
-                if (keyCode === 107) self._zoomIn();    // <NumPad +>
-                if (keyCode === 109) self._zoomOut();   // <NumPad ->
-                if (keyCode === 111) self._zoomReset(); // <NumPad />
+                if (keyCode === 107 || keyCode === 187) self._zoomIn();    // <NumPad +> and <=>
+                if (keyCode === 109 || keyCode === 189) self._zoomOut();   // <NumPad -> and <->
+                if (keyCode === 111 || keyCode === 191) self._zoomReset(); // <NumPad /> and </>
             });
         }
 
