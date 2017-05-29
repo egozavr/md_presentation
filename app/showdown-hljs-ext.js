@@ -25,7 +25,7 @@
                             const lm = left.match(/class="(.*)"/i);
                             if (lm) {
                                 if (lm[1].match(/nohighlight/i)) return wholeMatch;
-                                left = left.replace(/class="(.*)"/, `class="hljs ${lm[1]}"`);
+                                left = left.replace(/class="(.*)"/, 'class="hljs '+ lm[1]+ '"');
                             }
                             else {
                                 left = left.replace(/[>]$/ig, ' class="hljs">');
